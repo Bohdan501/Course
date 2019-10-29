@@ -4,9 +4,10 @@ def check(ll):
     # check if the list is sorted
     #return False
     if ll ==[15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]:
-        return True
+        result = True
     else:
-        return False
+        result = False
+    return result
 
 
 def print_bord(ll):
@@ -28,7 +29,7 @@ def check_move(move, bb):
 
     if bb[n] == bb[n_0-4] or bb[n] == bb[n_0-1] or bb[n] == bb[n_0+1] or bb[n] == bb[n_0+4] :
         bb[n], bb[n_0] = bb[n_0], bb[n]
-        
+
 
         print(bb)
 
